@@ -4,10 +4,12 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
+
+import static com.mongodb.client.model.Filters.eq;
 
 public class BlogPostDAO {
     MongoCollection<Document> postsCollection;
@@ -19,11 +21,7 @@ public class BlogPostDAO {
     // Return a single post corresponding to a permalink
     public Document findByPermalink(String permalink) {
 
-        // todo  XXX
-        Document post = null;
-
-
-
+        Document post = postsCollection.find(eq("permalink", permalink)).first();
 
         return post;
     }
@@ -34,8 +32,11 @@ public class BlogPostDAO {
 
         // todo,  XXX
         // Return a list of Documents, each one a post from the posts collection
-        List<Document> posts = null;
-
+        List<Document> posts = postsCollection
+                .find()
+                .sort(new Document("date", -1))
+                .limit(limit)
+                .into(new ArrayList<Document>());
 
         return posts;
     }
@@ -63,8 +64,15 @@ public class BlogPostDAO {
 
         // Build the post object and insert it
         Document post = new Document();
+        post.append("title", title);
+        post.append("body", body);
+        post.append("tags", tags);
+        post.append("comments", new ArrayList());
+        post.append("date", new Date());
+        post.append("permalink", permalink);
+        post.append("author", username);
 
-
+        postsCollection.insertOne(post);
 
         return permalink;
     }

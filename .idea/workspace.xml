@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00c9daae-bca8-4f74-bdb9-088bc65315a3" name="Default" comment="" />
+    <list default="true" id="00c9daae-bca8-4f74-bdb9-088bc65315a3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/course/BlogPostDAO.java" afterPath="$PROJECT_DIR$/src/main/java/course/BlogPostDAO.java" />
+    </list>
     <ignored path="M101J.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,17 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BlogPostDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/course/BlogPostDAO.java">
+      <file leaf-file-name="BlogController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/course/BlogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07941484">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
+            <state vertical-scroll-proportion="-0.35514018">
+              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#20691#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -49,6 +59,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/course/BlogController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/course/BlogPostDAO.java" />
       </list>
     </option>
   </component>
@@ -65,7 +77,7 @@
     <option name="width" value="1409" />
     <option name="height" value="1000" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -125,6 +137,14 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freemarker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -159,7 +179,7 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Blog">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -176,10 +196,10 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="course.BlogController" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -246,6 +266,24 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="false" name="Blog" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="course.BlogController" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="M101J" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.Blog" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -259,14 +297,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="211" y="51" width="1409" height="1000" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24982257" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -274,14 +314,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -290,6 +329,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/run.sh">
@@ -308,70 +351,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/course/BlogController.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.966562">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-          <folding>
-            <marker date="1453673645000" expanded="true" signature="0:593" placeholder="/.../" />
-            <marker date="1453673645000" expanded="true" signature="619:1247" placeholder="..." />
-            <marker date="1453673645000" expanded="true" signature="1249:1476" placeholder="/**...*/" />
-            <marker date="1453673645000" expanded="true" signature="1726:1896" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="1966:2391" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="2447:3382" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="2491:2633" placeholder="/**...*/" />
-            <marker date="1453673645000" expanded="true" signature="2738:2828" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="2913:3217" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="3439:17781" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="3542:4144" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="3688:4134" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="4283:5329" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="4432:5319" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="5430:7186" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="5579:7176" placeholder="{...}" />
-            <marker date="1453673645000" expanded="false" signature="5898:5914" placeholder="&lt;~&gt;" />
-            <marker date="1453673645000" expanded="true" signature="7292:7942" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="7453:7932" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="8010:8735" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="8159:8725" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="8877:9544" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="9026:9534" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="9664:11406" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="9825:11396" placeholder="{...}" />
-            <marker date="1453673645000" expanded="false" signature="10528:10544" placeholder="&lt;~&gt;" />
-            <marker date="1453673645000" expanded="true" signature="11474:12199" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="11623:12189" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="12311:13901" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="12472:13891" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="13999:14362" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="14148:14352" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="14374:14529" placeholder="//..." />
-            <marker date="1453673645000" expanded="true" signature="14591:15996" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="14740:15986" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="16126:16400" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="16275:16390" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="16515:17301" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="16664:17291" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="17427:17773" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="17576:17763" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="17897:18189" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="18311:18592" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="18702:19220" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="18713:18807" placeholder="//..." />
-            <marker date="1453673645000" expanded="false" signature="19021:19029" placeholder="&lt;~&gt;" />
-            <marker date="1453673645000" expanded="true" signature="19477:20466" placeholder="{...}" />
-            <marker date="1453673645000" expanded="true" signature="20526:20688" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/freemarker/entry_template.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.1985371">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/course/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11912226">
+        <state vertical-scroll-proportion="0.2737722">
           <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
             <marker date="1427303816000" expanded="false" signature="0:593" placeholder="/.../" />
-            <marker date="1427303816000" expanded="false" signature="619:1067" placeholder="..." />
+            <marker date="1427303816000" expanded="true" signature="619:1067" placeholder="..." />
             <marker date="1427303816000" expanded="false" signature="1254:1265" placeholder=" { " />
             <marker date="1427303816000" expanded="false" signature="1319:1325" placeholder=" }" />
             <marker date="1427303816000" expanded="true" signature="1462:2181" placeholder="{...}" />
@@ -383,7 +385,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/course/SessionDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11912226">
+        <state vertical-scroll-proportion="0.029595016">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding>
             <marker date="1427303816000" expanded="false" signature="0:593" placeholder="/.../" />
@@ -402,9 +404,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/course/BlogPostDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07941484">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+        <state vertical-scroll-proportion="0.91121495">
+          <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+          <folding>
+            <marker date="1453675493000" expanded="true" signature="24:285" placeholder="..." />
+            <marker date="1453675493000" expanded="false" signature="418:429" placeholder=" { " />
+            <marker date="1453675493000" expanded="false" signature="483:489" placeholder=" }" />
+            <marker date="1453675493000" expanded="true" signature="602:714" placeholder="{...}" />
+            <marker date="1453675493000" expanded="true" signature="878:1211" placeholder="{...}" />
+            <marker date="1453675493000" expanded="true" signature="889:983" placeholder="//..." />
+            <marker date="1453675493000" expanded="true" signature="1295:2524" placeholder="{...}" />
+            <marker date="1453675493000" expanded="true" signature="1648:2125" placeholder="//..." />
+            <marker date="1453675493000" expanded="true" signature="2763:3041" placeholder="{...}" />
+            <marker date="1453675493000" expanded="true" signature="2774:3034" placeholder="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/course/BlogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.35514018">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#20691#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
